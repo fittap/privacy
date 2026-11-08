@@ -11,18 +11,16 @@
   <link rel="canonical" href="https://fittap.github.io/privacy/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
   <style>
-    :root { --bg: #FAF7F2; --card: #F3EEE7; --text: #2B2421; --muted: #81776F; --border: #E3DCD2; }
+    /* White and black, like the app (mobile/src/lib/theme.ts). */
+    :root { --bg: #FFFFFF; --card: #FFFFFF; --text: #000000; --muted: #666666; --border: #E6E6E6; }
     * { box-sizing: border-box; }
     body { margin: 0; background: var(--bg); color: var(--text);
            font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
     main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
-    .wordmark { font-family: "Playfair Display", Georgia, serif; font-style: italic; font-size: 40px; margin: 0; }
-    .wordmark .i { position: relative; }
-    .wordmark .ring { position: absolute; left: calc(0.257em - 0.085em); top: calc(0.372em - 0.085em);
-                      width: 0.17em; height: 0.17em; border: 0.04em solid currentColor; border-radius: 50%; box-sizing: border-box; }
-    h1 { font-family: "Playfair Display", Georgia, serif; font-style: italic; font-weight: 400; font-size: 32px; margin: 8px 0 4px; }
+    .wordmark { display: block; height: 34px; width: auto; margin: 0 0 8px; }
+    h1 { font-family: "Playfair Display", Georgia, serif; font-weight: 400; font-size: 32px; margin: 8px 0 4px; }
     .updated { color: var(--muted); margin: 0 0 32px; }
     section { background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 16px 20px; margin: 0 0 16px; }
     h2 { font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin: 4px 0 8px; }
@@ -33,7 +31,7 @@
 </head>
 <body>
   <main>
-    <p class="wordmark" aria-label="Pivvy">P<span class="i">ı<span class="ring"></span></span>vvy</p>
+    <img class="wordmark" src="pivvy-wordmark-black.png?v=1" alt="Pivvy">
     <h1>Privacy policy</h1>
     <p class="updated">Last updated October 28, 2026</p>
 
